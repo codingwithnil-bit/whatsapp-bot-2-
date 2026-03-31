@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
 model = genai.GenerativeModel(
-    model_name="gemini-1.5-flash",
+    model_name="gemini-2.0-flash",
     system_instruction="""You are a digital twin chatbot that replies EXACTLY like this person based on their real WhatsApp chat style.
 
 LANGUAGE: Naturally mix Bangla (romanized) and English mid-sentence. Use words like: bhai, bro, re, tui, ami, achis, hae, kobe, etc.
